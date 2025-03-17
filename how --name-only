@@ -1,0 +1,29 @@
+[33mcommit 5f9d09ead688ff81daf52ba5f2c9cff5457537b7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: milonofff <alekseymilonov@gmail.com>
+Date:   Wed Mar 5 19:53:00 2025 +0800
+
+    add base page - exception
+
+[33mcommit 60eacf870ae0b69af9f61df4cd896d2ee0db317a[m
+Author: milonofff <alekseymilonov@gmail.com>
+Date:   Wed Mar 5 19:26:41 2025 +0800
+
+    first test page object
+
+[33mcommit 48eecdf82fbf0509d5433f062c74b25c3d002da2[m
+Author: milonofff <alekseymilonov@gmail.com>
+Date:   Wed Mar 5 15:21:25 2025 +0800
+
+    add base page and main page
+
+[33mcommit 24b9cda4ed15890673338140e4ece2a890e38056[m
+Author: milonofff <alekseymilonov@gmail.com>
+Date:   Wed Mar 5 13:52:15 2025 +0800
+
+    preparing the environment
+
+[33mcommit 3ca1a233e4ea61b7ac019faa3ab68f0723da6b23[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: milonofff <65884046+milonofff@users.noreply.github.com>
+Date:   Wed Mar 5 11:19:45 2025 +0800
+
+    Initial commit
