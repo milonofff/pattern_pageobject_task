@@ -10,3 +10,4 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     ADD_CART = (By.XPATH, "//*[@id='add_to_basket_form']/button")
+    #SUCCESS_MESSAGE = (By.XPATH, "")
