@@ -16,7 +16,9 @@ class ProductPageLocators():
     PRODUCT_PRICE_CART = (By.XPATH, "//*[@id='messages']/div[3]/div/p[1]/strong") # Сообщение что стоимость корзины теперь составляет
     DEFERRED_BENEFIT_OFFER = (By.XPATH, '//*[@id="messages"]/div[2]/div/strong') # Сообщение что ваша корзина удовлетворяет условиям предложения
 
-
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
 
 
 

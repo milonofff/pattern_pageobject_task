@@ -32,3 +32,9 @@ class ProductPage(BasePage):
         price_after = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE_CART).text
         assert price_up_to == price_after, f"Ожидалась цена '{price_up_to}', но получили '{price_after}'"
 
+    def should_not_be_success_message(self): # проверяет, что сообщение об успешной операции не присутствует на странице
+        assert self.is_not_element_present(*ProductPageLocators.PRODUCT_NAME_ADD), "Сообщение об успешном выполнении отображается, но его не должно быть"
+
+
+    def should_be_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.PRODUCT_NAME), "Сообщение об успешном выполнении отображается"
