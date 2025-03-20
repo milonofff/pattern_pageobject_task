@@ -37,3 +37,15 @@ def test_message_disappeared_after_adding_product_to_basket(browser):# Этот 
     product_page.delivering_basket()  # Этот метод находит кнопку добавить в корзину и кликает по ней
     product_page.solve_quiz_and_get_code()  # Вводит расчетные значения в alert
     product_page.should_be_success_message()  # Проверяем, что нет сообщения об успехе
+
+def test_guest_should_see_login_link_on_product_page(browser): # следует_увидеть_ссылку_для_входа_на_страницу_продукта
+    link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
+    page = ProductPage(browser, link)
+    page.open()
+    page.should_be_login_link()
+
+def test_guest_can_go_to_login_page_from_product_page(browser): # можно_перейти_на_страницу_входа_со_страницы_продукта
+    link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
+    page = ProductPage(browser, link)
+    page.open()
+    page.go_to_login_page()
