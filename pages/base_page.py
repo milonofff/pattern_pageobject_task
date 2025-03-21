@@ -10,7 +10,7 @@ from .locators import BasePageLocators
 другие Page Object классы.
 """
 class BasePage():
-    def __init__(self, browser, url, timeout=0): #10
+    def __init__(self, browser, url, timeout=10): #10
         self.browser = browser # это объект веб-драйвера (например, webdriver.Chrome())
         self.url = url # адрес веб-страницы, которую мы хотим открыть
         self.browser.implicitly_wait(timeout) # неявное ожидание по умолчанию, задается в секундах
@@ -73,3 +73,8 @@ class BasePage():
 
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
+
+
+    def guest_clik_button_see_basket(self):  # просмотреть корзину
+        link = self.browser.find_element(*BasePageLocators.CART)
+        link.click()

@@ -19,8 +19,10 @@ class ProductPageLocators():
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    CART = (By.XPATH, '//*[@id="default"]/header/div[1]/div/div[2]/span/a') # Кнопка перехода в корзину
 
-
-
+class BasketPageLocators():
+    CART_IS_EMPTY = (By.XPATH, "//*[@id='content_inner']//p[normalize-space()='Ваша корзина пуста']") # Корзина пуста
+    ITEMS_IN_CART = (By.XPATH, "//*[@id='content_inner']//p[normalize-space()='Товары в корзине']") # Товары в корзине
 
 
