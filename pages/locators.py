@@ -8,6 +8,11 @@ class LoginPageLocators():
     LOGIN_FORM = (By.XPATH, "//*[@id='login_form']")
     REGISTER_FORM = (By.XPATH, "//*[@id='register_form']")
 
+    REGISTRATION_EMAIL = (By.ID, "id_registration-email")
+    REGISTRATION_PASSWORD = (By.ID, "id_registration-password1")
+    REGISTRATION_CONFIRM_PASSWORD = (By.ID, "id_registration-password2")
+    REGISTER_BUTTON = (By.NAME, "registration_submit")
+
 class ProductPageLocators():
     ADD_CART = (By.XPATH, "//*[@id='add_to_basket_form']/button") # Кнопка добавить в корзину
     PRODUCT_NAME = (By.XPATH, "//*[@id='content_inner']/article/div[1]/div[2]/h1") # Название товара до нажатия товара в корзину
@@ -20,9 +25,10 @@ class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     CART = (By.XPATH, '//*[@id="default"]/header/div[1]/div/div[2]/span/a') # Кнопка перехода в корзину
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketPageLocators():
-    CART_IS_EMPTY = (By.XPATH, "//*[@id='content_inner']//p[normalize-space()='Ваша корзина пуста']") # Корзина пуста
-    ITEMS_IN_CART = (By.XPATH, "//*[@id='content_inner']//p[normalize-space()='Товары в корзине']") # Товары в корзине
+    CART_IS_EMPTY = (By.XPATH, "//*[@id='content_inner']") # Корзина пуста
+    ITEMS_IN_CART = (By.XPATH, "//*[@id='content_inner']/div[1]/div/h2") # Товары в корзине
 
 
